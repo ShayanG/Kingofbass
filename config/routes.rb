@@ -3,15 +3,15 @@ CheamCroquetWebsite::Application.routes.draw do
   root :to => 'cheam_croquet#home'
   
   match "/home" => "cheam_croquet#home", via: :get
-  match "/about_the_club" => "cheam_croquet#about_the_club", via: :get
-  match "/how_to_join" => "cheam_croquet#how_to_join", via: :get
-  match "/what_you_need" => "cheam_croquet#what_you_need", via: :get
+  match "/about_the_club" => "cheam_croquet#abouttheclub", via: :get
+  match "/how_to_join" => "cheam_croquet#howtojoin", via: :get
+  match "/what_you_need" => "cheam_croquet#whatyouneed", via: :get
   match "/programme" => "cheam_croquet#programme", via: :get
-  match "/news_letters" => "cheam_croquet#news_letters", via: :get
-  match "/club_matters" => "cheam_croquet#club_matters", via: :get
-  match "/how_to_get_there" => "cheam_croquet#how_to_get_there", via: :get
-  match "/book_a_lawn" => "cheam_croquet#book_a_lawn", via: :get
-  match "/links_to_croquet_sites" => "cheam_croquet#links_to_croquet_sites", via: :get
+  match "/news_letters" => "cheam_croquet#newsletters", via: :get
+  match "/club_matters" => "cheam_croquet#clubmatters", via: :get
+  match "/how_to_get_there" => "cheam_croquet#howtogetthere", via: :get
+  match "/book_a_lawn" => "cheam_croquet#bookalawn", via: :get
+  match "/links_to_croquet_sites" => "cheam_croquet#linkstocroquetsites", via: :get
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
