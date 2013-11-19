@@ -15,9 +15,9 @@ class CheamCroquetController < ApplicationController
     @title = "What You Need"
   end
 
-  def programme
-    @title=Time.now.year
-  end
+  #def programme
+   # @title=Time.now.year
+  #end
 
   def newsletters
     @title = "News Letters"

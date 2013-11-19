@@ -3716,3 +3716,54 @@ Processing by CheamCroquetController#howtojoin as HTML
   Rendered layouts/_header.html.erb (0.1ms)
   Rendered layouts/_navigation.html.erb (0.9ms)
 Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (24.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (9.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20131119173843)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "date" date, "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131119173843"]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 131.227.7.41 at 2013-11-19 17:39:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CheamCroquetController#home as HTML
+  Rendered cheam_croquet/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 450ms (Views: 427.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 131.227.7.41 at 2013-11-19 17:39:24 +0000
+
+
+Started GET "/assets/modernizr-latest.js?body=1" for 131.227.7.41 at 2013-11-19 17:39:24 +0000
+
+
+Started GET "/events" for 131.227.7.41 at 2013-11-19 17:39:25 +0000
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for 131.227.7.41 at 2013-11-19 17:39:27 +0000
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (166.8ms)
+  Rendered events/new.html.erb within layouts/application (169.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 181ms (Views: 179.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for 131.227.7.41 at 2013-11-19 17:39:30 +0000
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.3ms)

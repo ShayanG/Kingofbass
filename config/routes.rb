@@ -1,12 +1,14 @@
 CheamCroquetWebsite::Application.routes.draw do
   
+  resources :events
+
   root :to => 'cheam_croquet#home'
   
   match "/home" => "cheam_croquet#home", via: :get
   match "/about_the_club" => "cheam_croquet#abouttheclub", via: :get
   match "/how_to_join" => "cheam_croquet#howtojoin", via: :get
   match "/what_you_need" => "cheam_croquet#whatyouneed", via: :get
-  match "/programme" => "cheam_croquet#programme", via: :get
+  #match "/programme" => "cheam_croquet#programme", via: :get
   match "/news_letters" => "cheam_croquet#newsletters", via: :get
   match "/club_matters" => "cheam_croquet#clubmatters", via: :get
   match "/how_to_get_there" => "cheam_croquet#howtogetthere", via: :get
