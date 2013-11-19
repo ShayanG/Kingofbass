@@ -3599,3 +3599,120 @@ Processing by CheamCroquetController#abouttheclub as HTML
   Rendered layouts/_header.html.erb (0.3ms)
   Rendered layouts/_navigation.html.erb (1.3ms)
 Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 131.227.7.41 at 2013-11-19 17:15:59 +0000
+Processing by CheamCroquetController#home as HTML
+  Rendered cheam_croquet/home.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (couldn't find file 'modernizr-2.7.0'
+  (in /home/action/CheamCroquet_Website/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title><%= myTitle  %></title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__1189916973744544907_70226443407240'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/" for 131.227.7.41 at 2013-11-19 17:17:40 +0000
+Processing by CheamCroquetController#home as HTML
+  Rendered cheam_croquet/home.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (couldn't find file 'modernizr-2.7.0'
+  (in /home/action/CheamCroquet_Website/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title><%= myTitle  %></title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__790894080049964774_70049175351160'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 131.227.7.41 at 2013-11-19 17:20:10 +0000
+Processing by CheamCroquetController#home as HTML
+  Rendered cheam_croquet/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 147ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 131.227.7.41 at 2013-11-19 17:20:10 +0000
+
+
+Started GET "/assets/modernizr-latest.js?body=1" for 131.227.7.41 at 2013-11-19 17:20:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 131.227.7.41 at 2013-11-19 17:20:10 +0000
+
+
+Started GET "/club_matters" for 131.227.7.41 at 2013-11-19 17:20:14 +0000
+Processing by CheamCroquetController#clubmatters as HTML
+  Rendered cheam_croquet/clubmatters.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/programme" for 131.227.7.41 at 2013-11-19 17:20:18 +0000
+Processing by CheamCroquetController#programme as HTML
+  Rendered cheam_croquet/programme.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about_the_club" for 131.227.7.41 at 2013-11-19 17:20:28 +0000
+Processing by CheamCroquetController#abouttheclub as HTML
+  Rendered cheam_croquet/abouttheclub.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/programme" for 131.227.7.41 at 2013-11-19 17:20:31 +0000
+Processing by CheamCroquetController#programme as HTML
+  Rendered cheam_croquet/programme.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/what_you_need" for 131.227.7.41 at 2013-11-19 17:20:32 +0000
+Processing by CheamCroquetController#whatyouneed as HTML
+  Rendered cheam_croquet/whatyouneed.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/programme" for 131.227.7.41 at 2013-11-19 17:20:33 +0000
+Processing by CheamCroquetController#programme as HTML
+  Rendered cheam_croquet/programme.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how_to_join" for 131.227.7.41 at 2013-11-19 17:20:34 +0000
+Processing by CheamCroquetController#howtojoin as HTML
+  Rendered cheam_croquet/howtojoin.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
